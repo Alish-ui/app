@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F8F8F8">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:id="@+id/topBar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#E8D884"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/img"
+                android:contentDescription="Back"
+                android:padding="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="WWAS Recharge"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_marginStart="12dp"/>
+        </LinearLayout>
+
+        <!-- Recharge Users Section -->
+        <TextView
+            android:id="@+id/tvRechargeUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recharge Users"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_marginTop="16dp"/>
+
+        <!-- User Card -->
+        <LinearLayout
+            android:id="@+id/userCard"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/bg_user_card"
+            android:padding="12dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="8dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MR BUTT CO.."
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID:7352903736"
+                    android:textSize="12sp"
+                    android:textColor="#555" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Enter ID Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_input"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:layout_marginTop="16dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Enter ID to add new user"
+                android:textSize="14sp"
+                android:padding="8dp"
+                android:background="@android:color/transparent" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:textSize="14sp"
+                android:backgroundTint="#7B68EE"
+                android:textColor="#FFFFFF"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Payment Method Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D3D9F3"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000"
+                android:layout_marginBottom="8dp"/>
+
+
+
+            <!-- Payment Options -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="16dp">
+
+                <Button
+                    android:id="@+id/btnGooglePay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GOOGLEPAY"
+                    android:textSize="14sp"
+                    android:backgroundTint="#D3D3D3"
+                    android:textColor="#000"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/btnCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CARD"
+                    android:textSize="14sp"
+                    android:backgroundTint="#D3D3D3"
+                    android:textColor="#000"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recharge Amount"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewRecharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

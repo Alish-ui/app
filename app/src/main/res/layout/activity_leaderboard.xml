@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <!-- Tabs Section (Wealth, Charm, Lucky) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8B5A2B"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wealth"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Charm"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lucky"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!-- Filter Section (Daily, Week Rank, Monthly, Total) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8B5A2B"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daily"
+            android:textSize="14sp"
+            android:textColor="#8B5A2B"
+            android:backgroundTint="#E0C097"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Week rank"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@android:color/transparent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monthly"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@android:color/transparent"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@android:color/transparent"/>
+    </LinearLayout>
+
+    <!-- Leaderboard Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#C49A6C"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/img"
+            android:tint="#FFC107" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baaz12"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!-- Countdown Timer -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23 : 57 : 59"
+            android:textSize="18sp"
+            android:textColor="#8B5A2B"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- List of Users -->
+    <ListView
+        android:id="@+id/listLeaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+
+</LinearLayout>

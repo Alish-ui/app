@@ -1,0 +1,1469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#D2A07D">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="top">
+
+        <!-- VIP Title at the Top -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VIP"
+            android:textColor="#FFD700"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp" />
+
+        <!-- VIP Info Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="#9C6A4D"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="VIP"
+                android:textColor="#FFD700"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SVIP"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- VIP Details Box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#C19173"
+            android:padding="15dp"
+            android:layout_marginBottom="10dp">
+
+            <!-- VIP Details (Left) -->
+            <LinearLayout
+                android:layout_width="211dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="VIP"
+                    android:textColor="#EDEBE4"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="💰 Purchase 200,000"
+                    android:textColor="#FFD700"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#FFB400"
+                    android:text="Purchase"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <!-- VIP Badge Image (Right) -->
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/img_2"/>
+        </LinearLayout>
+
+        <!-- VIP Privileges Title Box (Centered) -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#8B5E3C"
+            android:padding="10dp"
+            android:text="VIP PRIVILEGES"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Privileges Grid (3 Columns) -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3"
+            android:layout_marginBottom="20dp"
+            android:gravity="center">
+
+            <!-- Example Privilege Item -->
+            <LinearLayout
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#E6B17E"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Profile Card"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Profile Card"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!-- Example Privilege Item -->
+            <LinearLayout
+                android:layout_width="103dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#E6B17E"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Profile Card"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Profile Card"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="142dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#E6B17E"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Profile Card"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/img_1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="Profile Card"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <!-- Row 1 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Circle 1 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_1"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginEnd="19dp"
+                        android:src="@drawable/img_1" />
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_1"
+                        android:layout_alignBottom="@id/frame_icon_1"
+                        android:layout_marginEnd="-17dp"
+                        android:layout_marginBottom="-8dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:text="Frames"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 2 -->
+                <RelativeLayout
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_2"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="28dp"
+                        android:src="@drawable/img_2" />
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_2"
+                        android:layout_alignBottom="@id/frame_icon_2"
+                        android:layout_marginEnd="-30dp"
+                        android:layout_marginBottom="-11dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:text="VIP Logo"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 3 -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_3"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_3"
+                        android:layout_alignBottom="@id/frame_icon_3"
+                        android:layout_marginEnd="-20dp"
+                        android:layout_marginBottom="-11dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:text="VIP Badge"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 4 -->
+                <RelativeLayout
+                    android:layout_width="104dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_4"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/img_4" />
+
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_4"
+                        android:layout_alignBottom="@id/frame_icon_4"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="4dp"
+                        android:text="New Icon"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- Row 2 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Circle 5 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_5"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_3" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_5"
+                        android:layout_alignBottom="@id/frame_icon_5"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_5"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 5"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 6 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_6"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_2" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_6"
+                        android:layout_alignBottom="@id/frame_icon_6"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_6"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 6"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 7 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_7"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_7"
+                        android:layout_alignBottom="@id/frame_icon_7"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_7"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 7"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <!-- Circle 8 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_8"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_8"
+                        android:layout_alignBottom="@id/frame_icon_8"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_8"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 8"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <!-- Row 3 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Circle 5 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_31"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_3" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_31"
+                        android:layout_alignBottom="@id/frame_icon_31"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_31"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 9"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 6 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_32"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_2" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_32"
+                        android:layout_alignBottom="@id/frame_icon_32"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_32"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 6"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 7 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_33"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_33"
+                        android:layout_alignBottom="@id/frame_icon_33"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_33"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 7"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <!-- Circle 8 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_34"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_34"
+                        android:layout_alignBottom="@id/frame_icon_34"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_34"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 8"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- Row 4 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Circle 5 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_9"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_3" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_9"
+                        android:layout_alignBottom="@id/frame_icon_9"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_9"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 9"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 6 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_10"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_2" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_10"
+                        android:layout_alignBottom="@id/frame_icon_10"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_10"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 6"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 7 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_11"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_11"
+                        android:layout_alignBottom="@id/frame_icon_11"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_11"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 7"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <!-- Circle 8 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_12"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_12"
+                        android:layout_alignBottom="@id/frame_icon_12"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_12"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 8"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- Row 5 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Circle 5 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_13"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_3" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_13"
+                        android:layout_alignBottom="@id/frame_icon_13"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_13"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 9"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 6 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_14"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_2" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_14"
+                        android:layout_alignBottom="@id/frame_icon_14"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_14"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 6"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 7 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_15"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_15"
+                        android:layout_alignBottom="@id/frame_icon_15"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_15"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 7"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <!-- Circle 8 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_16"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_16"
+                        android:layout_alignBottom="@id/frame_icon_16"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_16"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 16"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- Row 5-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Circle 5 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_17"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_3" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_17"
+                        android:layout_alignBottom="@id/frame_icon_17"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_17"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 9"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 6 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_18"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_2" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_18"
+                        android:layout_alignBottom="@id/frame_icon_18"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_18"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 6"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 7 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_19"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_19"
+                        android:layout_alignBottom="@id/frame_icon_19"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_19"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 7"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <!-- Circle 8 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_20"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_20"
+                        android:layout_alignBottom="@id/frame_icon_20"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_20"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 8"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- Row 6 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Circle 5 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_21"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_3" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_21"
+                        android:layout_alignBottom="@id/frame_icon_21"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_21"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 9"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 6 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_22"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_2" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_22"
+                        android:layout_alignBottom="@id/frame_icon_22"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_22"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 6"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 7 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_23"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_23"
+                        android:layout_alignBottom="@id/frame_icon_23"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_23"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 7"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <!-- Circle 8 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_24"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_24"
+                        android:layout_alignBottom="@id/frame_icon_24"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_24"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 8"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+            <!-- Row 7 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp">
+
+                <!-- Circle 5 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_25"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_3" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_25"
+                        android:layout_alignBottom="@id/frame_icon_25"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_25"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 9"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 6 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_26"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_2" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_26"
+                        android:layout_alignBottom="@id/frame_icon_26"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_26"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 6"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <!-- Circle 7 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_27"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_27"
+                        android:layout_alignBottom="@id/frame_icon_27"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_27"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 7"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+                <!-- Circle 8 -->
+                <RelativeLayout
+                    android:layout_width="97dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <View
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/img_6" />
+
+                    <ImageView
+                        android:id="@+id/frame_icon_28"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/img_4" />
+                    <ImageView
+                        android:layout_width="29dp"
+                        android:layout_height="25dp"
+                        android:layout_alignEnd="@id/frame_icon_28"
+                        android:layout_alignBottom="@id/frame_icon_28"
+                        android:layout_marginEnd="-16dp"
+                        android:layout_marginBottom="-5dp"
+                        android:src="@drawable/img_5" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/frame_icon_28"
+                        android:layout_centerHorizontal="true"
+                        android:text="Icon 8"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

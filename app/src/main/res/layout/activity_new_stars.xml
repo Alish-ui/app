@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF6FC"
+    android:orientation="vertical"
+    tools:context=".NewStarsActivity">
+
+    <!-- Top New Stars Section -->
+    <LinearLayout
+        android:id="@+id/topStarsSection"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="#39B5FF"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← New Stars"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <!-- Example Star Item -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/img_40"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baaz12"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💰 3700k"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"/>
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:text="+"
+                    android:backgroundTint="#FFFFFF"
+                    android:textColor="#39B5FF"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Repeat 2 more times or create a RecyclerView/Loop in code if needed -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Ranking List Section -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rankRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+</LinearLayout>

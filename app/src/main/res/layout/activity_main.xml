@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Profile Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#A8E6CE"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="63dp"
+                android:layout_height="53dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="135dp"
+                android:layout_marginTop="67dp"
+                android:src="@drawable/img"
+                android:onClick="openvisit"
+                />
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="37dp"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/img"
+                android:onClick="openprofile"/>
+
+            <TextView
+                android:id="@+id/userId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profileImage"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="141dp"
+                android:layout_marginTop="-80dp"
+                android:paddingTop="5dp"
+                android:text="ID NO: 92084498"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <ImageView
+                android:id="@+id/iconRight"
+                android:layout_width="72dp"
+                android:layout_height="47dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="69dp"
+                android:layout_marginEnd="93dp"
+                android:src="@drawable/img"
+                android:onClick="openedit"/>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="58dp"
+                android:layout_marginBottom="83dp"
+                android:paddingTop="5dp"
+                android:text="SAM"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="openAgency"
+                />
+
+            <LinearLayout
+                android:id="@+id/statsLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="53dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="6dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:text="Follow&#10;48"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:text="Fans&#10;48"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:text="Pins&#10;48"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:text="Gifter&#10;48"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:text="Visitors&#10;48"
+                    android:textAlignment="center"
+                    />
+
+                <!-- Home Icon Added -->
+                <ImageView
+                    android:id="@+id/homeIcon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/img_1"
+                    android:onClick="openRecharge"
+                    />
+
+                <!-- '>' Symbol Added -->
+                <TextView
+                    android:id="@+id/arrowIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:padding="5dp"
+                    android:text=">"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+        <!-- New Coins Section with 4 Icons -->
+        <LinearLayout
+            android:layout_width="381dp"
+            android:layout_height="80dp"
+            android:background="#FFE082"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!-- Coin Icon 1 -->
+            <ImageView
+                android:layout_width="82dp"
+                android:layout_height="56dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/img_2"
+                android:onClick="openVIP"
+                />
+
+            <!-- Coin Icon 2 -->
+            <ImageView
+                android:layout_width="84dp"
+                android:layout_height="54dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/img_2"
+                android:onClick="opentransfer"
+                />
+
+            <!-- Coin Icon 3 -->
+            <ImageView
+                android:layout_width="79dp"
+                android:layout_height="59dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/img_2"
+                android:onClick="openearning"
+                />
+
+            <!-- Coin Icon 4 -->
+            <ImageView
+                android:layout_width="71dp"
+                android:layout_height="58dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/img_2"
+                android:onClick="openCP"/>
+        </LinearLayout>
+        <!-- Coins Section -->
+
+        <!-- Icons Grid with Increased Text Size and Coin Icons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFCCBC"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <!-- Coin 1 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="37dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/img_3"
+                    android:onClick="openCoin"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:text="101&#10;Coins"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:onClick="openle"/>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/img_3"
+                    />
+
+            </LinearLayout>
+
+            <!-- Coin 2 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:text="53738&#10;Coins"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:onClick="openjob"/>
+
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/img_3"
+                    android:onClick="openjob"/>
+
+            </LinearLayout>
+
+            <!-- Coin 3 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:padding="10dp"
+                    android:text="784640&#10;Coins"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold"  />
+                <ImageView
+                    android:layout_width="31dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:src="@drawable/img_3"
+                    android:onClick="openTASK"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- Icons Grid with 4 Columns and 3 Rows -->
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="316dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="4"
+            android:padding="10dp">
+
+            <!-- Row 1 -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_2"
+                android:onClick="openaccess"
+                />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_2"
+                android:onClick="openjob"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_2" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_2" />
+
+            <!-- Row 2 -->
+            <ImageView
+                android:id="@+id/levelIcon"
+                android:layout_width="92dp"
+                android:layout_height="101dp"
+                android:layout_marginStart="5dp"
+                android:onClick="openLevelScreen"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img"
+                android:onClick="openBadge"
+                />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_2"
+                android:onClick="openMedal"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_2"
+                android:onClick="openBoard"
+                />
+
+            <!-- Row 3 -->
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_2"
+
+                />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_2"
+                android:onClick="openFeedback"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_2" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/img_2"
+                />
+
+        </GridLayout>
+
+    </LinearLayout>
+</ScrollView>

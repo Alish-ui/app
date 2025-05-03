@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Toolbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#B8AEAE"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_24"
+            android:contentDescription="Back"
+            android:padding="5dp"/>
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img"
+            android:layout_marginStart="10dp"
+            android:contentDescription="Profile Picture"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"/>
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:maxLines="1"
+            android:ellipsize="end"/>
+
+        <Button
+            android:id="@+id/btnFollow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow"
+            android:textSize="12sp"
+            android:backgroundTint="@color/purple"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="85dp"
+        android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/btnMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_33"
+            android:contentDescription="Menu"/>
+    </LinearLayout>
+
+    <!-- Chat messages -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Chat input section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/edtMessage"
+            android:layout_width="237dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_text_bg"
+            android:hint="Say something"
+            android:padding="10dp" />
+
+        <ImageView
+            android:id="@+id/btnEmoji"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/img_34"
+            android:layout_marginStart="5dp"/>
+
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Send"
+            android:backgroundTint="@color/purple"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="5dp"/>
+
+    </LinearLayout>
+
+    <!-- Bottom Icons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#BAAEAE">
+
+        <ImageView
+            android:id="@+id/btnVoice"
+            android:layout_width="86dp"
+            android:layout_height="40dp"
+            android:contentDescription="Voice"
+            android:src="@drawable/img_29" />
+
+        <ImageView
+            android:id="@+id/btnImage"
+            android:layout_width="138dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:contentDescription="Image"
+            android:src="@drawable/img_30" />
+
+        <ImageView
+            android:id="@+id/btnGift"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_31"
+            android:layout_marginStart="20dp"
+            android:contentDescription="Gift"/>
+    </LinearLayout>
+
+</LinearLayout>

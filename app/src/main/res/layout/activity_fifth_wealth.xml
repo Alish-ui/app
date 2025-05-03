@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D7C951"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="WEALTH"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginEnd="8dp"
+                android:text="Level 1-10"
+                android:textColor="#FFFFFF"
+                android:onClick="openFirstWealthScreen"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginEnd="8dp"
+                android:text="Level 11-20"
+                android:textColor="#FFFFFF"
+                android:onClick="openSecondWealthScreen"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginEnd="8dp"
+                android:text="Level 21-30"
+                android:textColor="#FFFFFF"
+                android:onClick="openThirdWealth"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginEnd="8dp"
+                android:text="Level 31-40"
+                android:textColor="#FFFFFF"
+                android:onClick="openFourthWealth"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFFFFF"
+                android:onClick="openFifthWealth"
+                android:padding="10dp"
+                android:text="Level 41-50"
+                android:textColor="#660375" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:padding="10dp">
+
+            <!-- 10 rows, 4 icons per row (40 icons total) -->
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+            <ImageView
+                android:layout_width="96dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_4" />
+
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>

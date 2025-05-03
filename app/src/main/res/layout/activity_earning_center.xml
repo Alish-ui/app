@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Earning Center"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#121111"
+            android:gravity="center"/>
+
+        <!-- Top Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_7"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Earnings Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <!-- Yesterday Earning -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/bg_payment"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginRight="8dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yesterday Earning"
+                    android:textColor="#000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/img_8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="center"
+                    android:text="Total Coins: 90,300\nEquivalent in USD: $300"
+                    android:textColor="#000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Daily Earning -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/bg_payment"
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_marginRight="8dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Daily Earning"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User A\n50,000 coins = $50"
+                    android:textSize="12sp"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+
+            <!-- Weekly Earning -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/bg_payment"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Weekly Earning"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#000"/>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/img_8"
+                    android:layout_marginTop="8dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Coins: 90,300\nEquivalent in USD: $300"
+                    android:textSize="12sp"
+                    android:textColor="#000"
+                    android:gravity="center"
+                    android:layout_marginTop="6dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- 15 Days Earning -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_payment"
+            android:padding="12dp"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 Days Earning"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User A\n50,000 coins = $50\n50,000 coins = $50"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <!-- Monthly Earning -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_payment"
+            android:padding="12dp"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Earning"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="#000"/>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img_9"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Coins: 90,300\nEquivalent in USD: $300"
+                android:textSize="12sp"
+                android:textColor="#000"
+                android:gravity="center"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <!-- Withdraw Request Button -->
+        <Button
+            android:id="@+id/withdrawButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_payment"
+            android:text="Withdraw Request"
+            android:textColor="#FFF"
+            android:textSize="14sp"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>

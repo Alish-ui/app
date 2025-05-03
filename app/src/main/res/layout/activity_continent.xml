@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continent"
+            android:textSize="20sp"
+            android:padding="12dp"
+            android:background="#FFEB3B"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:alignmentMode="alignMargins"
+            android:rowCount="4"
+            android:layout_gravity="center"
+            android:rowOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <!-- Define buttons -->
+            <Button android:id="@+id/btnAsia"
+                style="@style/ContinentButtonStyle"
+                android:text="ASIA"/>
+            <Button android:id="@+id/btnAntarctica"
+                style="@style/ContinentButtonStyle"
+                android:text="ANTARTICA"/>
+            <Button android:id="@+id/btnAustralia"
+                style="@style/ContinentButtonStyle"
+                android:text="AUSTRALIA"/>
+            <Button android:id="@+id/btnMiddleEast"
+                style="@style/ContinentButtonStyle"
+                android:text="MIDDLE EAST"/>
+            <Button android:id="@+id/btnEurope"
+                style="@style/ContinentButtonStyle"
+                android:text="EUROPE"/>
+            <Button android:id="@+id/btnAfrica"
+                style="@style/ContinentButtonStyle"
+                android:text="AFRICA"/>
+            <Button android:id="@+id/btnSouthAmerica"
+                style="@style/ContinentButtonStyle"
+                android:text="SOUTH AMERICA"/>
+            <Button android:id="@+id/btnNorthAmerica"
+                style="@style/ContinentButtonStyle"
+                android:text="NORTH AMERICA"/>
+
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

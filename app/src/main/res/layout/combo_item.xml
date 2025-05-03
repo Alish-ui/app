@@ -1,0 +1,80 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/rounded_white_card">
+
+
+<TextView
+        android:id="@+id/comboTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ultimate Romance Combo X1"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/comboDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022-08-22 18:27"
+        android:textSize="12sp"
+        android:textColor="#888888"
+        android:layout_gravity="end"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp">
+
+        <ImageView
+            android:id="@+id/senderImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_40"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_bg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sent to"
+            android:layout_marginHorizontal="8dp" />
+
+        <ImageView
+            android:id="@+id/receiverImage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/receiver_placeholder"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_bg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/senderName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DON.ACO"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/receiverName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Malik12"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

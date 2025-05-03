@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@android:drawable/ic_media_previous"
+        app:tint="@android:color/black"
+        android:layout_marginBottom="10dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Settings"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Name"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginBottom="4dp"/>
+
+    <EditText
+        android:id="@+id/roomName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@android:color/darker_gray"
+        android:padding="8dp"
+        android:hint="Enter room name"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/roomCover"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@android:color/darker_gray"
+            android:scaleType="centerInside"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Set Room Cover"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Topic"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/roomTopic"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/darker_gray"
+        android:padding="8dp"
+        android:hint="Please set room announcement"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Theme"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/themeSocial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Social"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/themeChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/themeGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/themeMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music"
+            android:layout_marginStart="8dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Background"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/startBroadcast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Live Broadcast"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

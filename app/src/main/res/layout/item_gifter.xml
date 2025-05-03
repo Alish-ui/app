@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:gravity="center_vertical">
+
+    <!-- Profile Image -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img_10"
+        android:background="@drawable/rounded_border"/>
+
+    <!-- User Info Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingStart="10dp">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/gifterRanking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏆 Top Gifter"
+            android:textSize="14sp"
+            android:textColor="#FFD700
+"/>
+
+        <TextView
+            android:id="@+id/giftStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gifts Sent: 100"
+            android:textColor="#FFD700"/>
+
+        <TextView
+            android:id="@+id/lastGiftDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Gift: 2h ago"
+            android:textColor="#FFD700"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/liveIndicator"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/img_25"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/sendGiftButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Gift"
+            android:textSize="12sp"
+            android:background="#0000FF"
+            android:padding="5dp"/>
+
+        <Button
+            android:id="@+id/thankYouButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thank You"
+            android:textSize="12sp"
+            android:background="#808080"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/messageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textSize="12sp"
+            android:background="#808080"
+            android:padding="5dp"
+            android:layout_marginTop="5dp"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

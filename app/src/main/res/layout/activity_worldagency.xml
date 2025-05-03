@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7B3B3B"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <!-- Header Section -->
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img_51"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whole World Agency"
+            android:textSize="20sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID:12324"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#A1524E"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <!-- Badge Image -->
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Badge"
+                android:src="@drawable/img_52" />
+
+            <!-- Text Content Section -->
+            <LinearLayout
+                android:layout_width="268dp"
+                android:layout_height="127dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Top Row: Title and Ranking -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp">
+
+                    <TextView
+                        android:layout_width="101dp"
+                        android:layout_height="wrap_content"
+                        android:text="Family Exp"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ranking of month"
+                        android:textColor="#FFFFFF"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Level Indicator -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    android:gravity="center_vertical"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lv 1"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+
+                    <ProgressBar
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="174dp"
+                        android:layout_height="8dp"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="#BDAAAA"
+                        android:max="100"
+                        android:progress="50"
+                        android:progressTint="#FFFFFF" />
+
+                    <TextView
+                        android:layout_width="38dp"
+                        android:layout_height="wrap_content"
+                        android:text="Lv 2"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!-- Experience Text -->
+                <TextView
+                    android:layout_width="187dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="Experience I contributed\n886226"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+
+                <!-- Bottom Join Text -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Join Our agency for hosting +92745692 \uD83D\uDD17"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <!-- Trophy Box -->
+            <LinearLayout
+                android:layout_width="42dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/trophy_box_background"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:contentDescription="Trophy"
+                    android:src="@drawable/img_53" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="101"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Tabs -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textColor="#FFFFFF"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Task"
+                android:textColor="#999999"
+                android:gravity="center"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <!-- Family Announcements -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Family announcements"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please respect each other, don't misbehave with anyone"
+            android:background="#AAAAAA"
+            android:padding="8dp"
+            android:textColor="#000000"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#D3D3D3" />
+
+        <!-- Top Members -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top members of the family"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/img_50"
+                android:layout_margin="4dp" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/img_50"
+                android:layout_margin="4dp" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/img_50"
+                android:layout_margin="4dp" />
+        </LinearLayout>
+
+        <!-- Member List -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Member List"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img_49"
+                android:layout_margin="4dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img_49"
+                android:layout_margin="4dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img_49"
+                android:layout_margin="4dp" />
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img_49"
+                android:layout_margin="4dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

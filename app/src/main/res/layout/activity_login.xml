@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/img_14"
+    tools:context=".LoginActivity">
+
+    <!-- App Name -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WVPC"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="50dp" />
+
+    <!-- Google Login Button -->
+    <LinearLayout
+        android:id="@+id/btnGoogleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_user_card"
+        android:padding="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="20dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/img_15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google login"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <!-- Facebook Login Button -->
+    <LinearLayout
+        android:id="@+id/btnFacebookLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_user_card"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/img_16" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook login"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <!-- Centered Login Icon -->
+    <ImageView
+        android:id="@+id/imgLoginIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/img_17"
+        android:layout_marginTop="30dp" />
+
+    <!-- Bottom Terms Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By registering or logging in, you agree to the User Agreement and Privacy Policy."
+        android:textSize="12sp"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFBE6"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/headingText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ASIA"
+        android:textAlignment="center"
+        android:textColor="#A64B00"
+        android:textSize="18sp"
+        android:background="#FFF176"
+        android:padding="8dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/asiaRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="8dp" />
+</LinearLayout>

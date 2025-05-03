@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp">
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        android:background="@drawable/circle_background"
+        android:layout_marginEnd="12dp" />
+
+    <!-- User Info Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Username + Live Status -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+            <!-- LIVE Indicator (Hidden by default) -->
+            <TextView
+                android:id="@+id/liveStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIVE"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/live_badge_background"
+                android:padding="4dp"
+                android:layout_marginStart="8dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Interaction Stats -->
+        <TextView
+            android:id="@+id/interactionStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Interactions: 120"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Unfollow Button -->
+    <Button
+        android:id="@+id/unfollowButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unfollow"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="12dp" />
+</LinearLayout>

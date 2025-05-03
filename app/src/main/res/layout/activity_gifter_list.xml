@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <!-- Header Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingVertical="8dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_24"
+            android:padding="8dp"
+            android:contentDescription="Back Button"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gifters"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/edtSearchGifter"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Search gifters..."
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@drawable/search_background"
+        android:drawableStart="@drawable/img_22"
+        android:textColor="@color/black"
+        android:textColorHint="#808080"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Sorting Dropdown -->
+    <Spinner
+        android:id="@+id/spinnerSortGifter"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_background"/>
+
+    <!-- Top Gifters Section -->
+    <LinearLayout
+        android:id="@+id/layoutTopGifters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="visible">
+
+        <!-- First Top Gifter -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgTopGifter1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img_10"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_payment"/>
+
+            <TextView
+                android:id="@+id/txtTopGifter1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🏆 Alice"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <!-- Second Top Gifter -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgTopGifter2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_border"/>
+
+            <TextView
+                android:id="@+id/txtTopGifter2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🥈 Bob"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <!-- Third Top Gifter -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgTopGifter3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/img"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rounded_border"/>
+
+            <TextView
+                android:id="@+id/txtTopGifter3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🥉 Charlie"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- RecyclerView to Show Gifters -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewGifters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never"
+        android:scrollbars="vertical"/>
+</LinearLayout>

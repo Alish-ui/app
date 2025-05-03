@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Hala"
+        tools:targetApi="31">
+        <activity
+            android:name=".NewStarsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GameWinnersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RecordBreakerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ComboSentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeeklyStarsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".worldagency"
+            android:exported="false" />
+        <activity
+            android:name=".AfricaCountriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MiddleEastCountriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsiaCountryAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".AsiaCountriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContinentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TopTalentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TopUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ToplistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentMethodsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OfficialAgentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VisitorListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GifterListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FanListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FollowingListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PinListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RoomSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AgencyDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LevelRewardsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileEditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VisitorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TaskCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JobApplicationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EarningCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AccessCenterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".transfer"
+            android:exported="false" />
+        <activity
+            android:name=".WWASRechargeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity
+            android:name=".CPDescriptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CoinStoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LeaderboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".medal"
+            android:exported="false" />
+        <activity
+            android:name=".Badge"
+            android:exported="false" />
+        <activity
+            android:name=".VIP"
+            android:exported="false" />
+        <activity
+            android:name=".FifthWealth"
+            android:exported="false" />
+        <activity
+            android:name=".FourthWealth"
+            android:exported="false" />
+        <activity
+            android:name=".ThirdWealth"
+            android:exported="false" />
+        <activity
+            android:name=".Talent"
+            android:exported="false" />
+        <activity
+            android:name=".SecondWealthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstWealthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LevelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

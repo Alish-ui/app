@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/titleMiddleEast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Middle East"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="#FCD34D"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="16sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/middleEastRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"/>
+</LinearLayout>

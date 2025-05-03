@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000"
+    android:padding="16dp">
+
+    <!-- Back Button -->
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/img_4"
+        app:tint="#FFF"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="visitors"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFF"
+        android:layout_gravity="center"/>
+
+    <!-- Visitors List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVisitors"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

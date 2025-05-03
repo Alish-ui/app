@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Top Pink Background with Rounded Corners -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@drawable/bg_top_rounded"
+        android:orientation="vertical">
+
+        <!-- Back Button -->
+        <TextView
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly Stars"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:layout_margin="16dp"/>
+
+        <!-- Tabs inside White Rounded Rectangle -->
+        <LinearLayout
+            android:id="@+id/tabContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/bg_tab_container"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <!-- Change TextView to Button -->
+            <Button
+                android:id="@+id/btnWeekly"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tab_selected"
+                android:gravity="center"
+                android:text="Weekly"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnLastWeek"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_tab_unselected"
+                android:gravity="center"
+                android:text="Last Week"
+                android:textColor="#D12D85"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Badge Image -->
+    <ImageView
+        android:id="@+id/badgeImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/img_54"
+        android:layout_gravity="center"
+        android:layout_marginTop="-60dp" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewStars"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

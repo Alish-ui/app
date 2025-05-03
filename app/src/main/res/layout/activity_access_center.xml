@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#F8F8F8">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_payment"
+        android:padding="12dp"
+        android:text="Access Center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:gravity="center"/>
+
+    <!-- Centering the Grid -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp">
+
+        <GridLayout
+            android:id="@+id/gridLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="3"
+            android:gravity="center"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Agent Panel -->
+            <LinearLayout
+                android:id="@+id/agentPanel"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_payment"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Agent Panel"
+                    android:textColor="#000"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <!-- Admin Panel -->
+            <LinearLayout
+                android:id="@+id/adminPanel"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_payment"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Admin Panel"
+                    android:textColor="#000"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <!-- BD Panel -->
+            <LinearLayout
+                android:id="@+id/bdPanel"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_payment"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="BD Panel"
+                    android:textColor="#000"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <!-- Manager Panel -->
+            <LinearLayout
+                android:id="@+id/managerPanel"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_payment"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Manager Panel"
+                    android:textColor="#000"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+            <!-- Coins Seller Panel (Centered in the last row) -->
+            <LinearLayout
+                android:id="@+id/coinsSellerPanel"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_columnSpan="2"
+                android:layout_margin="8dp"
+                android:background="@drawable/bg_payment"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Coins Seller Panel"
+                    android:textColor="#000"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+
+        </GridLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

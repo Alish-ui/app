@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3366CC"
+    android:padding="16dp">
+
+    <!-- Top Section for Title -->
+    <TextView
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="#FFEB3B"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="LEVELS"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <!-- Spacer to push items to center -->
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="163dp"
+        android:layout_weight="1" />
+
+    <!-- Centered Items -->
+    <TextView
+        style="@style/LevelBox"
+        android:layout_width="279dp"
+        android:layout_height="70dp"
+        android:onClick="openFirstWealthScreen"
+        android:text="Wealth Level"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        style="@style/LevelBox"
+        android:layout_width="279dp"
+        android:layout_height="70dp"
+        android:onClick="openSecondWealthScreen"
+        android:text="Talent Level"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Spacer to maintain centering -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

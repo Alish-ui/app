@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1D649D"
+            android:padding="12dp"
+            android:text="Job Application"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+
+        <!-- Profile Image -->
+        <!-- ID & Role -->
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_circle"
+            android:padding="8dp"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/tvHost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOST"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <View
+                android:layout_width="8dp"
+                android:layout_height="1dp" />
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/etUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext"
+            android:hint="User Id"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#444444"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#444444"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:background="@drawable/bg_edittext"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#444444"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/etReferenceId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_edittext"
+            android:hint="Reference ID"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#4E4A4A"
+            android:textStyle="bold" />
+
+
+
+
+
+        <!-- Apply for Job (Centered & Adjusted) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apply for Job"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#0A7DD9"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:layout_marginTop="8dp"
+                    android:columnOrderPreserved="false">
+
+                    <Button
+                        android:id="@+id/btnHost"
+                        style="@style/RoleButton"
+                        android:layout_width="100dp"
+                        android:layout_margin="4dp"
+                        android:text="Host" />
+
+                    <Button
+                        android:id="@+id/btnAgent"
+                        style="@style/RoleButton"
+                        android:layout_width="100dp"
+                        android:layout_margin="4dp"
+                        android:text="Agent" />
+
+                    <Button
+                        android:id="@+id/btnAgency"
+                        style="@style/RoleButton"
+                        android:layout_width="100dp"
+                        android:layout_margin="4dp"
+                        android:text="Agency" />
+
+                    <Button
+                        android:id="@+id/btnBD"
+                        style="@style/RoleButton"
+                        android:layout_width="100dp"
+                        android:layout_margin="4dp"
+                        android:text="BD" />
+
+                    <Button
+                        android:id="@+id/btnAdmin"
+                        style="@style/RoleButton"
+                        android:layout_width="100dp"
+                        android:layout_margin="4dp"
+                        android:text="Admin" />
+
+                    <Button
+                        android:id="@+id/btnManager"
+                        style="@style/RoleButton"
+                        android:layout_width="100dp"
+                        android:layout_margin="4dp"
+                        android:text="Manager" />
+                </GridLayout>
+
+                <!-- Gender Selection -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#0A7DD9"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"/>
+
+                <RadioGroup
+                    android:id="@+id/rgGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/rbMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:textColor="#EF85D4"/>
+
+                    <RadioButton
+                        android:id="@+id/rbFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"
+                        android:textColor="#208FE7"/>
+                </RadioGroup>
+
+        <!-- Status Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#0A7DD9"
+            android:layout_marginTop="12dp"
+            android:gravity="center"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/rbMarried"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Married"
+                android:textColor="#EF85D4"/>
+
+            <RadioButton
+                android:id="@+id/rbUnmarried"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unmarried"
+                android:textColor="#208FE7"/>
+        </RadioGroup>
+                <!-- Experience Selection (Centered) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Experience"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#0A7DD9"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center"/>
+
+                <RadioGroup
+                    android:id="@+id/rgExperience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <RadioButton
+                        android:id="@+id/rbYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        android:textColor="#EDAADC"/>
+
+                    <RadioButton
+                        android:id="@+id/rbNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="No"
+                        android:textColor="#8CC0E9"/>
+                </RadioGroup>
+
+                <!-- Submit Button -->
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textSize="14sp"
+                    android:backgroundTint="#055B53"
+                    android:textColor="#FFF"
+                    android:padding="12dp"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
+        </ScrollView>

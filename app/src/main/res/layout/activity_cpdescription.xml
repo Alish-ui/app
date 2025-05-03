@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CP Description"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- CP Step 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CP Step 1: Friendship"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The foundation of CP will start from friendship. Friend Request System: A user can send a friend request to another user, which is able to be accepted. Both users will be given 'Friendship' badges, which will appear on their profiles."
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/img"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- More CP Step Blocks (copy/paste as needed) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvStepTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CP Step 2: Something Else"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tvStepDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some description for step 2..."
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="4dp"/>
+
+            <ImageView
+                android:id="@+id/ivStepImage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/img"/>
+        </LinearLayout>
+ <!-- More CP Step Blocks (copy/paste as needed) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvStepTitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CP Step 2: Something Else"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tvStepDescription3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some description for step 2..."
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="4dp"/>
+
+            <ImageView
+                android:id="@+id/ivStepImage3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/img"/>
+        </LinearLayout>
+ <!-- More CP Step Blocks (copy/paste as needed) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvStepTitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CP Step 2: Something Else"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tvStepDescription2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some description for step 2..."
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="4dp"/>
+
+            <ImageView
+                android:id="@+id/ivStepImage2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/img"/>
+        </LinearLayout>
+ <!-- More CP Step Blocks (copy/paste as needed) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@android:color/white"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvStepTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CP Step 2: Something Else"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/tvStepDescription1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Some description for step 2..."
+                android:textSize="14sp"
+                android:textColor="#444444"
+                android:layout_marginTop="4dp"/>
+
+            <ImageView
+                android:id="@+id/ivStepImage1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/img"/>
+        </LinearLayout>
+
+        <!-- Add more step sections as needed -->
+
+
+
+    </LinearLayout>
+</ScrollView>
